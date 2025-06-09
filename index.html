@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Safronov - Sound Designer | Audio Mixer | Dialog Editor</title>
+    <meta name="description" content="Igor Safronov - Professional Sound Designer with over 10 years of experience in audio post-production for TV, film, advertising, and video games. Specializing in sound design, mixing, and dialog editing.">
+    <meta property="og:title" content="Igor Safronov - Sound Designer">
+    <meta property="og:description" content="Professional Sound Designer with over 10 years of experience in audio post-production for TV, film, advertising, and video games.">
+    <meta property="og:image" content="https://safroigor.com/img/avatar.jpg">
+    <meta property="og:url" content="https://safroigor.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://safroigor.com/index.html">
+	<link rel="apple-touch-icon" sizes="180x180" href=".img/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+	<link rel="manifest" href="img/fav/site.webmanifest">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	
+    <style>
+        /* General Styles */
+        :root {
+            --primary-color: #ff6f61;
+            --secondary-color: #ff3b2f;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --light-text-color: #666;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+		
+		/* Dark Theme Styles */
+		body.dark-theme {
+			--primary-color: #ff6f61;
+			--secondary-color: #ff3b2f;
+			--background-color: #1a1a1a;
+			--text-color: #f1f1f1;
+			--light-text-color: #ccc;
+		}
+
+		.dark-theme header {
+			background: linear-gradient(135deg, #333, #1a1a1a);
+			color: var(--text-color);
+		}
+
+		.dark-theme .experience-item {
+			background: #333;
+			color: var(--text-color);
+		}
+
+		.dark-theme .testimonials blockquote {
+			background: #333;
+			color: var(--text-color);
+		}
+
+		.dark-theme .contact-form {
+			background: #333;
+			color: var(--text-color);
+		}
+
+		.dark-theme footer {
+			background: #333;
+			color: var(--text-color);
+		}
+
+		/* Theme Switcher */
+		.theme-switcher {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			display: flex;
+			align-items: center;
+		}
+
+		.theme-switcher label {
+			margin-right: 10px;
+			color: var(--text-color);
+			font-size: 0.9em;
+		}
+
+		.theme-switcher input[type="checkbox"] {
+			appearance: none;
+			width: 40px;
+			height: 20px;
+			background-color: #ccc;
+			border-radius: 20px;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.theme-switcher input[type="checkbox"]::before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #fff;
+			top: 2px;
+			left: 2px;
+			transition: transform 0.3s ease;
+		}
+
+		.theme-switcher input[type="checkbox"]:checked::before {
+			transform: translateX(20px);
+			background-color: #333;
+		}
+
+		.theme-switcher input[type="checkbox"]:checked {
+			background-color: var(--primary-color);
+		}
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ffffff, #f1f1f1);
+            padding: 80px 20px 60px 20px; /* top, right, bottom, left */
+            text-align: center;
+            color: var(--text-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            color: var(--light-text-color);
+        }
+
+        .name-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .name-container h1 {
+            margin: 10px 0 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .social-tag {
+            color: var(--primary-color);
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        /* Head contact */
+        .contact-info {
+            margin-top: 30px;
+            font-size: 1em;
+            color: var(--light-text-color);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            color: var(--light-text-color);
+        }
+
+        .intro a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .intro a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Experience Section */
+        .experience {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .experience-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-item h3 {
+            margin: 0 0 5px;
+            font-size: 1.5em;
+            color: var(--primary-color);
+        }
+
+        .experience-item .meta {
+            margin-bottom: 10px;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .experience-item .description {
+            color: var(--light-text-color);
+            line-height: 1.5;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            aspect-ratio: 16 / 9;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 111, 97, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal iframe {
+            width: 80%;
+            height: 80%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* Skills Section */
+        .skills {
+            margin-bottom: 60px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .skill-container {
+            margin: 0 auto 20px;
+        }
+
+        .skill {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .skill-name {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--text-color);
+            text-align: left;
+            width: 100%;
+        }
+
+        .skill-percent {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-align: right;
+            min-width: 50px;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background: #ddd;
+            border-radius: 7px;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .skill-fill {
+            height: 100%;
+            background: var(--primary-color);
+            width: 0;
+            transition: width 1.5s ease-in-out;
+        }
+
+        /* Testimonials Section */
+        .testimonials blockquote {
+            background: #fff;
+            padding: 20px;
+            border-left: 5px solid var(--primary-color);
+            margin: 10px 0;
+            border-radius: 5px;
+            font-style: italic;
+            color: var(--light-text-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials cite {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            color: var(--light-text-color);
+        }
+
+        .contact-info-full {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: var(--light-text-color);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .contact-info-full a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info-full a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .contact-form h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-size: 1.5em;
+        }
+
+        .contact-form input,
+		.contact-form textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-size: 1em;
+			font-family: 'Inter', sans-serif;
+			transition: border-color 0.3s ease;
+			box-sizing: border-box;
+		}
+		
+        .contact-form textarea {
+			height: 120px;
+			resize: none;
+		}		
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+		
+        .contact-form button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: var(--secondary-color);
+        }
+
+        #formMessage {
+            margin-top: 10px;
+            font-size: 1em;
+            color: var(--light-text-color);
+        }
+		
+		/* Обновляем стили для контейнера кнопки и индикатора */
+		.button-container {
+			display: flex;
+			justify-content: center; /* Выравниваем содержимое по центру */
+			align-items: center;
+			position: relative; /* Для позиционирования индикатора */
+			height: 50px; /* Фиксированная высота контейнера */
+		}
+
+		#submitButton {
+			/* Стили для кнопки */
+			background: var(--primary-color);
+			color: white;
+			border: none;
+			padding: 10px 15px;
+			font-size: 1em;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background 0.3s ease;
+			position: absolute; /* Абсолютное позиционирование кнопки */
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%); /* Центрируем кнопку */
+		}
+
+		#submitButton:hover {
+			background: var(--secondary-color);
+		}
+
+		#loadingIndicator {
+			position: absolute; /* Абсолютное позиционирование индикатора */
+			top: 0;
+			left: 50%; /* Центрируем индикатор */
+			transform: translateX(-50%); /* Точное центрирование */
+			display: none; /* По умолчанию скрываем индикатор */
+			justify-content: center;
+			align-items: center;
+		}
+
+		#loadingIndicator.visible {
+			display: flex; /* Показываем индикатор, когда добавляем класс visible */
+		}
+
+		.spinner {
+			width: 30px;
+			height: 30px;
+			border: 4px solid rgba(255, 111, 97, 0.3);
+			border-top: 4px solid var(--primary-color);
+			border-radius: 50%;
+			animation: spin 1s linear infinite;
+		}
+
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+        /* Footer */
+        footer {
+            background: #fff;
+            color: var(--light-text-color);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+			font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .intro p {
+                font-size: 1em;
+            }
+
+            .experience {
+                grid-template-columns: 1fr;
+            }
+
+            .modal iframe {
+                width: 90%;
+                height: 50%;
+            }
+
+            .contact-info-full {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	
+</head>
+<body>
+    <header>
+		<div class="theme-switcher">
+			<label for="theme-toggle">Dark Mode</label>
+			<input type="checkbox" id="theme-toggle">
+		</div>
+		<img src="./img/avatar.jpg" alt="Igor Safronov" width="150" height="150">
+		<div class="name-container">
+			<h1>Igor Safronov</h1>
+			<div class="social-tag">@safroigor</div>
+		</div>
+		<p>Sound Designer / Re-recording Mixer / Dialog Editor</p>
+		<div class="contact-info">
+			<span>📍 Belgrade, Serbia</span>
+			<span>📧 <a href="mailto:igor@safroigor.com">igor@safroigor.com</a></span>
+			<span>📞 <a href="tel:+381611796385">+3 8161 179 63 85</a></span>
+			<span>🔗 <a href="https://www.linkedin.com/in/safronovigor/" target="_blank">LinkedIn</a></span>
+			<span>💬 <a href="https://t.me/safroigor" target="_blank">Telegram</a></span>
+			<span>🎧 <a href="https://discordapp.com/users/1126521125875228712" target="_blank">Discord</a></span>
+		</div>
+	</header>
+    <div class="container">
+        <!-- Intro Section -->
+        <section class="intro">
+            <p>With over 10 years in audio post-production for TV, film, advertising, and video games, I specialize in sound design, mixing, dialog editing, and ADR. Proficient in Reaper & Pro Tools, with expertise in voice-over recording, sound restoration, and adapting to new software. Experienced in both studio and on-set audio, including equipment setup, signal routing, and troubleshooting. Strong background in working with actors to ensure high-quality dialogue capture and synchronization. Knowledgeable in broadcast audio standards, delivering technically precise and emotionally compelling soundscapes.</p>
+            <a href="./Igor_Safronov_sound_designer_CV.pdf" download="Igor_Safronov_sound_designer_CV.pdf">Download Resume</a>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section">
+            <h2>Experience</h2>
+            <div class="experience">
+                <div class="experience-item">
+                    <h3>Sound Design Team Lead</h3>
+                    <div class="meta">
+                        <p>Wargaming · 2022 - Present</p>
+                    </div>
+                    <p class="description">Leading sound design teams and managing audio for game trailers, commercials, and videos. Specializing in sound design, mixing, and mastering, while directing voice-over sessions and integrating dialogue. Ensures high-quality standards, working across studio and on-location settings. Collaborates with developers and producers to seamlessly integrate audio into visuals, while mentoring junior specialists and overseeing project timelines.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Sound Designer</h3>
+                    <div class="meta">
+                        <p>TheSoul Publishing · 2019 - 2022</p>
+                    </div>
+                    <p class="description">Created and mixed audio for a variety of video projects, ensuring clear, high-quality sound. Produced 10–15 minutes of audio daily, consistently meeting tight deadlines while maintaining professional standards. Focused on optimizing workflows to improve efficiency, allowing for smoother production processes and timely delivery. Paid close attention to project requirements, ensuring that all audio elements were seamlessly integrated and aligned with the overall creative vision.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Freelance Sound Specialist</h3>
+                    <div class="meta">
+                        <p>Self-Employed · 2013 - Present</p>
+                    </div>
+                    <p class="description">Created and refined sound design, audio mixing, and dialog editing for films, trailers, TV shows, commercials, and video games, ensuring high-quality audio. Enhanced voice clarity and reduced background noise through careful editing and restoration. Worked with Reaper and Avid Pro Tools, managing post-production workflows and collaborating with teams and vendors to meet deadlines efficiently.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>My Work</h2>
+            <div class="gallery">
+                <div class="gallery-item" data-video="https://www.youtube.com/watch?v=fgPNJfxNLOY">
+                    <img src="./img/vid-tumb/steel-hunters.png" alt="Steel Hunters video thumbnail" loading="lazy">
+                    <div class="play-icon" aria-label="Play video">▶</div>
+                </div>
+                <div class="gallery-item" data-video="https://www.youtube.com/watch?v=urpvANXrFFE">
+                    <img src="./img/vid-tumb/web-adventure.jpg" alt="Web Adventure video thumbnail" loading="lazy">
+                    <div class="play-icon" aria-label="Play video">▶</div>
+                </div>
+                <div class="gallery-item" data-video="https://www.youtube.com/watch?v=BdsWpFHqs6k">
+                    <img src="./img/vid-tumb/goodfall.png" alt="Goodfall video thumbnail" loading="lazy">
+                    <div class="play-icon" aria-label="Play video">▶</div>
+                </div>
+                <div class="gallery-item" data-video="https://www.youtube.com/watch?v=7AZeTN4eCNM">
+                    <img src="./img/vid-tumb/jeremiah.png" alt="Jeremiah video thumbnail" loading="lazy">
+                    <div class="play-icon" aria-label="Play video">▶</div>
+                </div>
+                <div class="gallery-item" data-video="https://www.youtube.com/watch?v=aFwxIPW7bSw">
+                    <img src="./img/vid-tumb/champz.png" alt="Champz video thumbnail" loading="lazy">
+                    <div class="play-icon" aria-label="Play video">▶</div>
+                </div>
+                <div class="gallery-item" data-video="https://www.youtube.com/watch?v=DyIS50J9QpI">
+                    <img src="./img/vid-tumb/fear.png" alt="Fear video thumbnail" loading="lazy">
+                    <div class="play-icon" aria-label="Play video">▶</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+
+            <div class="skill-container">
+                <div class="skill">
+                    <div class="skill-name">Sound Design</div>
+                    <div class="skill-percent">95%</div>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-percent="100"></div></div>
+            </div>
+
+            <div class="skill-container">
+                <div class="skill">
+                    <div class="skill-name">Audio Editing</div>
+                    <div class="skill-percent">95%</div>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-percent="95"></div></div>
+            </div>
+			
+			<div class="skill-container">
+                <div class="skill">
+                    <div class="skill-name">Audio Mixing</div>
+                    <div class="skill-percent">95%</div>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-percent="95"></div></div>
+            </div>
+
+            <div class="skill-container">
+                <div class="skill">
+                    <div class="skill-name">Audio Restoration</div>
+                    <div class="skill-percent">90%</div>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-percent="95"></div></div>
+            </div>
+
+            <div class="skill-container">
+                <div class="skill">
+                    <div class="skill-name">Field Recording</div>
+                    <div class="skill-percent">90%</div>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-percent="90"></div></div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>Client Testimonials</h2>
+            <blockquote>
+                <p>"I love to work with people who are not just doing their job. Igor loves his craft and I appreciate his attention to details and willingness to provide the best result. Sound quality is great. Our cartoon got a life! Very very good! Tremendous and awesome job! Thank you Igor! We decided to pick Igor as our sound designer for our cartoon series. 10/10"</p>
+                <cite>— Terrence Johnson, Producer</cite>
+            </blockquote>
+            <blockquote>
+                <p>"We are absolutely delighted with Igor's work! He not only met but exceeded our expectations in sound design. Igor's attention to detail and willingness to go the extra mile made our project exceptional. The collaboration was seamless, and his creative input added a unique touch. Igor is the go-to sound designer for anyone looking to elevate their project. Super pleased with the outcome!"</p>
+                <cite>— Catherine Day, Animation Show Director</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Second time working with him and it was a great experience again! Fast, professional, talented. Couldn't ask for a better sound designer. I've tried working with several people and he is by far the best! Definitely must work with if you are trying to get something sound designed."</p>
+                <cite>— Jack Hicks, Video Editor</cite>
+            </blockquote>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info-full">
+                <span>📍 Belgrade, Serbia</span>
+                <span>📧 <a href="mailto:igor@safroigor.com">igor@safroigor.com</a></span>
+                <span>📞 <a href="tel:+381611796385">+3 8161 179 63 85</a></span>
+                <span>🔗 <a href="https://www.linkedin.com/in/safronovigor/" target="_blank">LinkedIn</a></span>
+                <span>💬 <a href="https://t.me/safroigor" target="_blank">Telegram</a></span>
+                <span>🎧 <a href="https://discordapp.com/users/1126521125875228712" target="_blank">Discord</a></span>
+            </div>
+            <!-- Contact Form -->
+            <div class="contact-form">
+				<h3>Send me a message</h3>
+				<form id="contactForm">
+					<input type="text" id="name" placeholder="Your Name" required>
+					<input type="email" id="email" placeholder="Your Email" required>
+					<textarea id="message" placeholder="Your Message" required></textarea>
+					<div class="button-container">
+						<button type="submit" id="submitButton">Send Message</button>
+						<div id="loadingIndicator" class="hidden">
+							<div class="spinner"></div>
+						</div>
+					</div>
+				</form>
+				<p id="formMessage"></p>
+			</div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Igor Safronov. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="videoModal">
+        <span class="close" id="closeModal">&times;</span>
+        <iframe id="modalVideo" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        // JavaScript for Modal
+        const modal = document.getElementById('videoModal');
+        const modalVideo = document.getElementById('modalVideo');
+        const closeModal = document.getElementById('closeModal');
+
+        // Open modal on gallery item click
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                let videoUrl = item.getAttribute('data-video');
+
+                // Преобразование ссылки в правильный формат для встраивания
+                if (videoUrl.includes("watch?v=")) {
+                    videoUrl = videoUrl.replace("watch?v=", "embed/");
+                } else if (videoUrl.includes("youtu.be/")) {
+                    let videoId = videoUrl.split("youtu.be/")[1].split("?")[0];
+                    videoUrl = "https://www.youtube.com/embed/" + videoId;
+                }
+
+                modalVideo.src = videoUrl;
+                modal.style.display = 'flex';
+            });
+        });
+
+        // Close modal on close button click
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+            modalVideo.src = ''; // Stop the video
+        });
+
+        // Close modal on clicking outside the video
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                modalVideo.src = ''; // Stop the video
+            }
+        });
+
+        // skills animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillBars = document.querySelectorAll(".skill-fill");
+            const skillPercents = document.querySelectorAll(".skill-percent");
+            const skillSection = document.querySelector(".skills");
+            let animationTriggered = false;
+
+            function animateSkills() {
+                if (!animationTriggered) {
+                    skillBars.forEach((bar, index) => {
+                        const percent = bar.getAttribute("data-percent");
+                        bar.style.width = percent + "%";
+
+                        // Обновляем текст с процентом
+                        let currentPercent = 0;
+                        const interval = setInterval(() => {
+                            if (currentPercent >= percent) {
+                                clearInterval(interval);
+                            } else {
+                                currentPercent++;
+                                skillPercents[index].textContent = currentPercent + "%";
+                            }
+                        }, 10);
+                    });
+                    animationTriggered = true;
+                }
+            }
+
+            function checkScroll() {
+                const sectionPosition = skillSection.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+                if (sectionPosition < screenHeight * 0.75) {
+                    animateSkills();
+                    window.removeEventListener("scroll", checkScroll);
+                }
+            }
+
+            window.addEventListener("scroll", checkScroll);
+        });
+
+        // EmailJS Integration
+        document.addEventListener("DOMContentLoaded", function() {
+			if (typeof emailjs !== "undefined") {
+				emailjs.init("gIKsIQARsnHKKd4Wk"); // Убедись, что ключ актуален!
+				console.log("✅ EmailJS загружен успешно.");
+			} else {
+				console.error("❌ Ошибка: EmailJS не загрузился.");
+			}
+		});
+
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+			event.preventDefault(); // Остановить стандартное поведение формы
+			console.log("📩 Форма отправляется...");
+
+			var formMessage = document.getElementById("formMessage");
+			var submitButton = document.getElementById("submitButton");
+			var loadingIndicator = document.getElementById("loadingIndicator");
+
+			// Скрываем кнопку и показываем индикатор загрузки
+			submitButton.style.display = "none"; // Скрываем кнопку
+			loadingIndicator.classList.add("visible"); // Показываем индикатор
+
+			formMessage.textContent = ""; // Очищаем старые сообщения
+
+			var params = {
+				name: document.getElementById("name").value,
+				email: document.getElementById("email").value,
+				message: document.getElementById("message").value
+			};
+
+			console.log("📨 Отправляем данные:", params);
+
+			emailjs.send("service_bflygj1", "template_t8cqddv", params)
+			.then(function(response) {
+				console.log("✅ Сообщение отправлено успешно:", response);
+				formMessage.textContent = "Message sent successfully!";
+				formMessage.style.color = "green";
+				document.getElementById("contactForm").reset();
+			})
+			.catch(function(error) {
+				console.error("❌ Ошибка при отправке:", error);
+				formMessage.textContent = "Error sending message.";
+				formMessage.style.color = "red";
+			})
+			.finally(function() {
+				// Возвращаем кнопку и скрываем индикатор после завершения
+				submitButton.style.display = "block"; // Показываем кнопку
+				loadingIndicator.classList.remove("visible"); // Скрываем индикатор
+			});
+		});
+		
+		document.addEventListener("DOMContentLoaded", function() {
+			const themeToggle = document.getElementById('theme-toggle');
+			const body = document.body;
+
+			// Проверяем, есть ли сохраненная тема в localStorage
+			const savedTheme = localStorage.getItem('theme');
+			if (savedTheme) {
+				body.classList.add(savedTheme);
+				themeToggle.checked = savedTheme === 'dark-theme';
+			}
+
+			// Обработчик для переключения темы
+			themeToggle.addEventListener('change', function() {
+				if (this.checked) {
+					body.classList.add('dark-theme');
+					localStorage.setItem('theme', 'dark-theme');
+				} else {
+					body.classList.remove('dark-theme');
+					localStorage.setItem('theme', '');
+				}
+			});
+		});
+    </script>
+</body>
+</html>
